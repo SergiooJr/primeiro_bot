@@ -7,7 +7,7 @@ pa.press("win")
 pa.write("login.xlsx")
 pa.press("backspace")
 pa.press("enter")
-time.sleep(5)
+time.sleep(10)
 # descobrir a posição do login
 # time.sleep(3)
 # print(pa.position()) # mostra a posição do mouse em pixels

@@ -14,7 +14,7 @@ while len(webdrive.find_elements(By.ID, 'signup')) < 1: # esperando carregar a t
     sleep(1)
 
 login = webdrive.find_element(By.ID, 'i0116') # procurar pelo ID para preencher o login
-login.send_keys("SeuEmail") # escreve no login
+login.send_keys("marisafaria67@hotmail.com") # escreve no login
 sleep(2)
 btn_proximo = webdrive.find_element(By.ID, 'idSIButton9').click() # procura pelo ID o botão, e clica nele
 
@@ -22,9 +22,14 @@ while len(webdrive.find_elements(By.ID, 'idA_PWD_ForgotPassword')) < 1: # espera
     sleep(1)
 
 senha = webdrive.find_element(By.ID, 'i0118') # procurar pelo ID para preencher a senha
-senha.send_keys("SuaSenha") # escreve na senha
+senha.send_keys("ma020320") # escreve na senha
 sleep(2)
 
 btn_entrar = webdrive.find_element(By.ID, 'idSIButton9').click() # procura pelo ID o botão, e clica nele 
+
+
+naoConect = webdrive.find_element(By.ID, 'idBtn_Back').click()
+
+
 sleep(60)
 
